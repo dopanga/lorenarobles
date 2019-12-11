@@ -1,0 +1,327 @@
+
+
+.header1{
+	font-family: Arial, Helvetica, sans-serif;
+	color:#29056b ;
+	font-size: 40px;
+	font-size: 30px;
+	line-height: normal;
+	text-align: center;
+	font-weight: bold;
+	
+		/* Flexbox */
+		display: flex;
+		justify-content:space-between;
+		align-items:center;
+	 
+		flex-direction:row;
+		flex-wrap:wrap;
+	
+}
+
+.header2{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #29056b;
+	font-size: 30px;
+	line-height: normal;
+	text-align: center;
+	font-weight: bold;
+}
+
+.header2bis{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #29056b;
+	font-size: 30px;
+	line-height: normal;
+	font-weight: bold;
+}
+
+.header3{
+	font-family: Arial, Helvetica, sans-serif;
+	color: darkslategrey ;
+	font-size: 20px;
+	line-height: inherit;
+	text-align: center;
+
+}
+
+.anterior{
+	font-family: Arial, Helvetica, sans-serif;
+	color: darkslategrey ;
+	font-size: 15px;
+	line-height: inherit;
+	text-align: right;
+
+}
+
+.header4{
+	font-family: inherit;
+	color: darkslategrey ;
+	font-size: 15px;
+	line-height: inherit;
+	text-align: center;
+
+}
+
+.parrafo{
+	font-size: 20px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 40;
+	
+	color: black ;
+	
+	line-height: inherit;
+	text-align: justify;
+	
+
+}
+
+
+  .boton_1{
+    text-decoration: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: helvetica;
+    font-weight: 300;
+    font-size: 25px;
+    font-style: italic;
+    color: #29056b;
+    background-color: #82b085;
+    border-radius: 15px;
+	border: 4px double #29056b;
+	transition: font-size 0.5s;
+  }
+
+  .boton_1:hover{
+    
+	text-decoration: none;
+	font-size: 40px;
+	cursor: pointer;
+  }
+
+  .boton_2{
+	text-decoration: none;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: helvetica;
+    font-weight: 200;
+    font-size: 20px;
+    font-style: italic;
+    color: #29056b;
+    background-color: #82b085;
+    border-radius: 15px;
+	border: 4px double #29056b;
+	transition: font-size 1s;
+  }
+
+
+  #bot2 {
+    -webkit-transition-timing-function: linear;
+    -moz-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+	transition-timing-function: linear;
+  }
+
+
+
+  .boton_2:hover{
+    
+	text-decoration: none;
+	font-size: 22px;
+	cursor: pointer;
+	animation: animame 1s linear 1s infinite alternate;
+	transform: rotateX(45deg);
+
+  }
+
+  ol, ul , label , fieldset{
+	  color:#29056b;
+	  font-size: 20px;
+	  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 40;
+	  
+  }
+  header {
+	
+	background-color: transparent ;
+	position: fixed;
+	height: 200px;
+	width: 100%;
+	
+	}
+
+  footer {
+		background:gray;/*#CCCCCC;*/
+		color: aliceblue;
+		clear:both;
+		text-align: center;
+		width: 100%;
+		padding:20px;
+		border-top: 2px solid #999999;
+		/*color:#FFFFFF;*/
+		/* Flexbox */
+		display: flex;
+		flex-wrap:wrap;
+		justify-content:space-between;
+}
+
+footer a {
+    /*background-image: url(/ima);*/
+		text-decoration: none;
+		color: #444;
+ }
+
+
+ footer .links {
+	background:#c0392b;
+	display:flex;
+	flex-wrap:wrap;
+}
+ 
+footer .links a {
+	flex-grow:1;
+ 
+	color:#fff;
+	padding:10px;
+	text-align: center;
+	text-decoration:none;
+}
+ 
+footer .links a:hover {
+	background:#E74C3C;
+}
+
+
+ body{
+	
+	background-color: rgba(7, 181, 255, 0.5);
+	background-image: url(../imagenes/fondo.jpg); 
+											
+	} 
+	
+
+ 
+
+
+ #alto {
+	background-color:gray;
+	width : 400 ;
+	align-content: right;
+}
+
+.menu { 
+	top:  0px;
+	z-index: 1;
+ }
+
+.bajar {
+	position: relative;
+	top: 110px;
+}
+
+
+ul {    
+	list-style:none;
+	font-size: 0;
+	/* IMPORTANTE */
+	padding: 0;
+  }
+  ul li {
+	display: inline-block;
+	width: 25%;
+  
+	
+	 /* IMPORTANTE */
+	 position:relative;
+  }
+
+  p  {
+	font-size: 14px;
+	text-align: right;
+	display: block;
+	color: rgb(2, 24, 32);
+	/*background-color: gray;*/
+	padding: 10px;
+	/*text-transform: uppercase;*/
+	text-decoration: none;
+	font-family: sans-serif;
+  }
+
+ li a {
+	font-size: 14px;
+	text-align: center;
+	display: block;
+	color: white;
+	background-color: SkyBlue;
+	padding: 10px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: sans-serif;
+  }
+
+  
+  a:hover {
+	background-color: RoyalBlue;
+  }
+  
+
+
+
+  ul ul { /* si un ul es padre de otro ul entonces... esto seria el submenu */
+	
+	 /* IMPORTANTE */
+	 position: absolute;
+	 display: none; 
+  }
+  ul ul li { /* los LI dentro del submenu, esta propiedad logra que ocupe todo lo que pueda */
+	width: 100%;
+  }
+  
+  /* Al pasar sobre los LI, si tiene un UL, se MOSTRARA */
+  ul li:hover ul {
+	 display:block;
+  }
+  
+  ul li:hover ul a:hover {
+	background-color: RoyalBlue 
+  }
+  
+  
+  img.logo {
+	width: 100px;
+	
+	text-align: center;
+	/*top: 20px;*/
+	margin: auto;
+	left: 600px;
+  }
+
+  .cont_logo {
+	  text-align: center;
+  }
+
+  HTML CSSResult
+  .t_agrandeTexto {
+	font-size: 14px;
+	transition: font-size 1s;
+  }
+  .t_agrandeTexto:hover {
+	font-size: 32px;
+	cursor: pointer;
+	
+  }
+  
+  .t_escalar1-2 {
+	transition: all 2s;
+/*	filter: blur(10px);*/
+  }
+  
+  .t_escalar1-2:hover {
+	transform: scale(1.2);
+	filter: blur(0);
+	cursor: pointer;
+  }
+  
+ 

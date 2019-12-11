@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+
+
+	<link href="css/css.css" rel="stylesheet" type="text/css" >
+
+
+	<style type="text/css">
+
+		a:link{ color: black; text-decoration: none ; font-weight: 300;font-weight: bold;}
+		
+		a:active{ color: #b413d4; text-decoration: none ; font-weight: 300;font-weight: bold;}
+		
+		a:visited{ color:#29056b; text-decoration: none ; font-weight: 300;font-weight: bold;}
+		
+		a:hover{ color: rgb(9, 56, 9); text-decoration: underline  ;font-weight: 300;font-weight: bold;}
+		
+		</style>
+</head>
+<body>
+	
+		<header class="menu">
+				<div class="cont_logo">
+				 <img src="imagenes/logo.jpg" alt="" class="logo">
+			   </div >  
+				 <ul>
+				   <li><a href="quienesSomos.html" target="_black" >¿QUIENES SOMOS?</a></li>
+				   <li><a href="adoptar.html" target="_black">ADOPTAR</a></li>
+				   <li><a href="apadrinar.html" target="_black">APADRINAR</a>
+					   <ul>
+						   <li><a href="">Subitem</a></li>
+						   <li><a href="">Subitem</a></li>
+					   </ul>
+				   </li>
+				   <li><a href="formulario.html" target="_black" >VOLUNTARIO</a></li>
+			   </ul>
+		 
+			   
+			 
+			 </header>
+  
+
+
+	<br> </br>
+
+	
+	<div id="contenedor" class="bajar">	
+
+			<h2 class="header2bis" >REQUISITOS PARA SER VOLUNTARIO </h2>
+							
+			<ol> <!-- ordered list - lista ordenada -->
+
+				<li>SER MAYOR DE 18 AÑOS.</li>
+				<li>ASISTIR LOS SÁBADOS A PARTIR DE LAS 15 HS.</li>
+				<li>COMPROMISO Y AMOR PARA ELLOS.</li>
+			</ol>
+		
+			<br> </br>
+		
+			 <h3 class="header2"> Por favor completá este formulario: </H3>
+				
+			
+		<form id="formulario1" name="formulario1" method="post" action="data.php">
+  		<fieldset id="datos_personales">
+			<legend class="header2" >Datos personales</legend>
+				<label for="nombre">Nombre:</label><br>
+				<input type="text" name="nombre" id="nombre"><br>
+				<label for="apellidos">Apellidos:</label><br>
+				<input type="text" name="apellidos" id="apellidos"><br>
+				<label for="dni">DNI:</label><br>
+				<input type="text" name="dni" id="dni" maxlength="9"><br>
+				<label for="edad">Edad:</label><br>
+				<input type="text" name="edad" id="edad" size="2" maxlength="2"><br>
+				<label for="sexo">Sexo:</label><br>
+				<select id="sexo" name="sexo">
+				<option value="X" selected="selected">...</option>
+				<option value="M">Másculino</option>
+				<option value="F">Femenino</option>
+					</select>
+		</fieldset>
+		<fieldset id="info">
+			<legend>En que tarea te gustaría anotarte</legend>
+				<input type="radio" name="limpiar" value="1">Limpieza de caniles<br>
+				<input type="radio" name="comida" value="2" checked="checked">Potes de agua y dar de comer<br>
+				<input type="radio" name="traslados" value="3">Traslados<br>
+				<input type="radio" name="transito" value="4">Tránsito en la semana
+				</fieldset>
+		<fieldset id="grupo_opinion">
+			<legend>Tu opinión</legend>
+			<textarea id="opinion" name="opinion" rows="10" cols="50"></textarea>
+		</fieldset>
+	<br> </br>
+		<input id="bot2" type="reset" class="boton_2"   value="Borrar formulario">&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" class="boton_2" value="Enviar">
+	  </form>
+	
+	  <p> <a href="index.html" class="anterior" title="Ir la página anterior">Volver a página principal</a></p>
+	</div>	
+
+	<br></br>
+	<br></br>
+
+
+	<footer id="pie" class="bajar">
+                  
+            <table align="center" width="100%"> <!-- inicio de tabla -->
+              <tr align="center"> <!-- table row - fila de tabla -->
+                <td width=200 align="center">
+                    <img src="imagenes/logo.jpg" alt="Logo"  width="150 "height="143"   >
+                </td> <!-- table data - informacion de tabla (columnas) col 1 --> 
+                
+                <td width=200 align="center"> 
+                  <h4>CONTACTANOS</h4>
+                  <li > 
+                      "Directora:"
+                      <strong>
+                          Dra. Juana Peréz
+                          <br>
+                      </strong> 
+                    "E-mail:"                
+                    <a href="mailito:info@refugioij.org">info@refugioij.org </a>                              
+					</li>                
+                </td> 
+                <td width=200 align="center">
+                  <h4 > DÓNDE ESTAMOS </h4>
+                    <li >
+                      Nos encontramos en  La Isla Jordan - Cipolletti - Río Negro.
+					</li>
+                </td>             
+                <td width=200 align="center"> 
+                  <h4 >NEWSLETTER </h4>
+                    <li>
+                      Suscribite para enterarte de las novedades
+					</li>
+                    <form action="">
+                      <label for="correo">Tu e-mail</label>
+                        <input type="email" id="correo" value="tu email" required />      
+                        <!-- botones para enviar, borrar información -->
+                        <input type="submit" />
+                      </form>   
+                </td> 
+              </tr>           
+            </table>      
+            <p>© 2019 RIS. RIS 2019 - Derechos Reservados </p>
+
+      </footer>
+		
+</body>
+
+</html>
